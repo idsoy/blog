@@ -59,11 +59,11 @@
          
           <li><a href="/">首页</a></li>
          
-          <li><a href="/archives/">归档</a></li>
-         
           <li><a href="/categories/">分类</a></li>
          
           <li><a href="/tags/">标签</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
          
           <li><a href="/about/">关于</a></li>
         
@@ -72,6 +72,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" href="/archive/680f0a1b.html"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="/archive/b0562f5c.html"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -167,8 +169,8 @@
 </article>
 
 
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script type="text/javascript" src="/js/src/Valine.min.js"></script>
+    <script type="text/javascript" src="/js/src/av-min.js"></script>
     <div id="vcomments" class="blog-post-comments"></div>
     <script>
         new Valine({
@@ -178,13 +180,13 @@
             appKey: 'KSlrhc63rGoztd4Ve4x3UNr0',
             placeholder: '说点什么',
             avatar: 'robohash'
-        })
-var infoEle = document.querySelector('#comments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
-      infoEle.childNodes.forEach(function(item) {
-        item.parentNode.removeChild(item);
-      });
-    }
+        });
+	   var infoEle = document.querySelector('#vcomments .info');
+    	if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      		infoEle.childNodes.forEach(function(item) {
+        		item.parentNode.removeChild(item);
+      		});
+    	}
     </script>
 
 
@@ -198,11 +200,11 @@ var infoEle = document.querySelector('#comments .info');
          
           <li><a href="/">首页</a></li>
          
-          <li><a href="/archives/">归档</a></li>
-         
           <li><a href="/categories/">分类</a></li>
          
           <li><a href="/tags/">标签</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
          
           <li><a href="/about/">关于</a></li>
         
